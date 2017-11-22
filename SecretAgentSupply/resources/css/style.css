@@ -18,7 +18,6 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  overflow: visible;
 }
 
 .header img {
@@ -31,8 +30,24 @@ body {
 
 .banner {
   background-image: url("../images/moto.jpeg");
+  height: 25rem;
+  width: 100%;
+  overflow: hidden;
 }
 
 .banner-title {
   font-weight: bold;
+  background-color: black;
+  width: 20rem;
+  margin-top: 9rem;
+  padding: 2rem 3rem;
+  align-content: space-between;
+}
+
+/* fix the 0.25rem between lines*/
+
+.banner-title h1 {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+  flex-wrap: wrap;
 }
