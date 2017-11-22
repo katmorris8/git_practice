@@ -5,14 +5,28 @@ html {
 body {
   font-family: Helvetica;
   color: white;
+  width: 960px;
   margin: 0 auto;
+  overflow: visible;
 }
 
 .header {
   background-color: black;
-  width: 100%;
+  width: auto;
   top: 0px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: visible;
+}
 
+.header img {
+  height: 1.5rem;
+}
+
+.header h5 {
+  padding: 0.5rem 0.66rem;
 }
 
 .banner {
